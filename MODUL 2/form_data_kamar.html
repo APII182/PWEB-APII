@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Kamar dan Fasilitas</title>
+    <style>
+        
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    max-width: 450px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="date"], input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+button.btn-cancel {
+    background-color: #d32f2f;
+}
+
+button.btn-cancel:hover {
+    background-color: #b71c1c;
+}
+
+.inline-label {
+    display: inline;
+    margin-left: 10px;
+    color: #555;
+    font-weight: normal;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Tambah Data Kamar</h2>
+        <form>
+            <label for="id_kamar">ID Kamar:</label>
+            <input type="text" id="id_kamar" name="id_kamar" required placeholder="Masukkan ID kamar">
+
+            <label for="gambar_ruangan">Gambar Ruangan:</label>
+            <input type="file" id="gambar_ruangan" name="gambar_ruangan" accept="image/*" required>
+
+            <label for="jenis_kamar">Jenis Kamar:</label>
+            <input type="text" id="jenis_kamar" name="jenis_kamar" required placeholder="Masukkan jenis kamar (misal: Standar, Deluxe)">
+
+            <label for="harga">Harga:</label>
+            <input type="number" id="harga" name="harga" required placeholder="Masukkan harga kamar per malam">
+
+            <label for="fasilitas">Fasilitas:</label>
+            <textarea id="fasilitas" name="fasilitas" rows="3" required placeholder="Masukkan fasilitas kamar (misal: AC, WiFi, TV)"></textarea>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-save">Simpan</button>
+                <button type="reset" class="btn btn-cancel">Batal</button>
+            </div>
+        </form>
+    </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Gambar</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    img {
+      max-width: 300px;
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menampilkan dan Menyembunyikan Gambar</h1>
+  <button id="toggleButton">Tampilkan/Sembunyikan Gambar</button>
+  <img id="image" src="RORRRR.jpg" alt="RORRRR" style="display: none;">
+  
+  <script>
+    $(document).ready(function () {
+      $("#toggleButton").click(function () {
+        $("#image").toggle(500); // Gambar akan muncul atau hilang dengan animasi
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../yusupp/TI-2023-02/web1-yusup/modul2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Modul2 bp1"
+	}
+}
